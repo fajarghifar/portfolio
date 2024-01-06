@@ -7,8 +7,8 @@ import css_icon from '../images/css_icon.svg'
 import json_icon from '../images/json_icon.svg'
 import { IoIosArrowDown,IoIosArrowForward } from 'react-icons/io';
 import { FaFolder, FaFolderOpen } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 import myContext from "../context/AppContext";
+import SideBarItem from './SideBarItem';
 
 function SideBar() {
   const {activeSideBar} = useContext(myContext)
@@ -29,26 +29,31 @@ function SideBar() {
       </button>
       {open && (
         <>
-          <Link to="/" className="explorer-file">
-            <img src={ react_icon } alt="icon" className="icon-side-bar"/>
-            <p>home.jsx</p>
-          </Link>
-          <Link to="/about" className="explorer-file">
-            <img src={ html_icon } alt="icon" className="icon-side-bar"/>
-            <p>about.html</p>
-          </Link>
-          <Link to="/projects" className="explorer-file">
-            <img src={ js_icon } alt="icon" className="icon-side-bar"/>
-            <p>projects.js</p>
-          </Link>
-          <Link to="/recommendation" className="explorer-file">
-            <img src={ json_icon } alt="icon" className="icon-side-bar"/>
-            <p>testimonials.json</p>
-          </Link>
-          <Link to="/contact" className="explorer-file">
-            <img src={ css_icon } alt="icon" className="icon-side-bar"/>
-            <p>contact.css</p>
-          </Link>
+          <SideBarItem
+            icon={ react_icon }
+            name='home.jsx'
+            path="/"
+          />
+          <SideBarItem
+            icon={ html_icon }
+            name='about.html'
+            path="/about"
+          />
+          <SideBarItem
+            icon={ js_icon }
+            name='projects.js'
+            path="/projects"
+          />
+          <SideBarItem
+            icon={ json_icon }
+            name='testimonials.json'
+            path="/recommendation"
+          />
+          <SideBarItem
+            icon={ css_icon }
+            name='contact.css'
+            path="/contact"
+          />
         </>
       )}
     </aside>

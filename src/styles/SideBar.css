@@ -48,6 +48,10 @@
   color: var(--white-100);
 }
 
+.explorer-file.active {
+  background-color: var(--gray-400);
+}
+
 .explorer-file:hover {
   background-color: var(--gray-400);
 }
@@ -98,5 +102,5 @@
     opacity: 1;
     transition: 0.3s ease;
   }
-  
+
 }
