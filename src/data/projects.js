@@ -13,8 +13,8 @@ const projects = [
     name: 'Stopwatch',
     description: 'Precision stopwatch app with a simple interface for accurate and efficient time measurement.',
     src: 'stop-watch.webp',
-    repository: 'https://github.com/thiagodanobrega/frontend-online-store',
-    site: 'https://frontend-online-store-thiagodanobrega.vercel.app/',
+    repository: 'https://github.com/fajarghifar/stopwatch',
+    site: '#',
     technologies: ['Dart', 'Flutter'],
   },
   {

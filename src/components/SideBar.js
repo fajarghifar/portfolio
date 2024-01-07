@@ -47,7 +47,7 @@ function SideBar() {
           <SideBarItem
             icon={ json_icon }
             name='testimonials.json'
-            path="/recommendation"
+            path="/testimonials"
           />
           <SideBarItem
             icon={ css_icon }

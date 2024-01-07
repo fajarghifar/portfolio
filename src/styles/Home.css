@@ -31,7 +31,7 @@
   align-items: flex-end;
   background: linear-gradient(180deg,hsla(207,90%,70%,1),hsla(207,90%,70%,.2));
   border-radius: 10rem 10rem 1rem 1rem;
-  height: 293px;
+  display: flex;
   justify-self: center;
   overflow: hidden;
   width: 190px;
@@ -101,7 +101,7 @@
   .image-perfil {
     margin-top: 3rem;
     order: 1;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 
   .home-content {
@@ -115,6 +115,7 @@
 @media screen and (min-width: 992px) {
   .home-img {
     height: 400px;
-    width: 290px;
+    width: 250px;
+    margin: 0rem 4rem
   }
 }
