@@ -1,0 +1,96 @@
+.main-wrapper.contact {
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+}
+.class-name {
+  color: var(--blue-200);
+  font-size: 1.2rem;
+}
+
+.element {
+  color: var(--white-100);
+  font-size: 1.2rem;
+}
+
+.key-name {
+  color: var(--white-100);
+  margin-left: 1.2rem;
+  font-size: 1.2rem;
+}
+
+a {
+  color: var(--blue-200);
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.title-container {
+  width: min(400px, 90vw);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.title-contact {
+  font-size: 2rem;
+  color: var(--white-100);
+}
+
+.message-contact {
+  color: var(--gray-100);
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.list-contact {
+  counter-reset: line;
+  counter-increment: line 0;
+  position: relative;
+  white-space: pre-wrap; 
+  padding-left: 7rem;
+}
+
+.list-contact .line {
+  display: block;
+  line-height: 1.5em;
+}
+
+.list-contact .line:before {
+  font-size: 1rem;
+  font-weight: normal;
+  position: absolute;
+  left: -10px;
+  content: counter(line);
+  counter-increment: line;
+  display: inline-block;
+  border:none;
+  color: var(--gray-100);
+  font-family: 'Fira Code', monospace;
+  padding-left: 6rem;
+  border-left: 1px solid var(--gray-200);
+}
+
+@media screen and (max-width: 1150px) {
+  .main-wrapper.contact {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .list-contact .line:before {
+    border-left: none;
+    padding-left: 1rem;
+  }
+
+  .list-contact {
+    padding-left: 1.6rem;
+  }
+
+  .title-contact {
+    font-size: 1.8rem;
+  }
+
+  .title-container {
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: 4rem;
+  }
+}
